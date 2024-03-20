@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  font-family: "Public Sans", sans-serif;
+}
+
+/* ----------CABEÇALHO---------- */
+
+ .logo .image {
+  width: 100px;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+  max-width: 1170px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo .title {
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    margin-left: 7px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+.logo .title:hover {
+  color: #1ed760;
+}
+
+.cabecalho .nav .menu {
+  display: flex;
+  gap: 15px;
+}
+
+.cabecalho .nav .menu .item a {
+    color: #fafafa;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 2px solid #fafafa;
+  background: #252525;
+  transition: 0.5s ease-in-out;
+}
+
+.cabecalho .nav .menu .item a:hover {
+    color: #1ed760;
+}
+
+/* ----------CABEÇALHO---------- */
+
+/* ------------PAINEL------------ */
+.conteudoPrincipal .paineis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    position: relative;
+}
+
+.conteudoPrincipal .paineis .imagemPainel {
+    background-repeat: no-repeat;
+    background-size: cover;
+  background-position: center;
+  min-width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  filter: brightness(50%);
+}
+
+.conteudoPrincipal .paineis .projeto1 {
+    background-image: url("../image/painel1.jpg");
+}
+
+.conteudoPrincipal .paineis .projeto2 {
+    background-image: url("../image/painel2.jpg");
+}
+
+.conteudoPrincipal .paineis .projeto3 {
+    background-image: url("../image/painel3.jpg");
+}
+
+.conteudoPrincipal .paineis .title {
+    font-size: calc(1em + 1vw);
+    color: #fafafa;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.conteudoPrincipal .paineis .seta {
+    background: url("../image/seta.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  text-indent: 100%;
+  overflow: hidden;
+}
+
+.conteudoPrincipal .paineis .seta.btnVoltar {
+    left: 20px;
+    transform: rotateY(180deg);
+}
+
+.conteudoPrincipal .paineis .seta.btnAvancar {
+  right: 20px;
+}
+
+/* ------------PAINEL------------ */
+
+/* ----------QUEM SOMOS---------- */
+.quemSomos{
+    background-color: #2941AB;
+}
+
+.quemSomos .conteudo {
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.quemSomos .conteudo .informacoes {
+    width: 40%;
+}
+
+.quemSomos .conteudo .image {
+    width: 60%;
+}
+
+.quemSomos .conteudo .informacoes .title {
+    font-size: 50px;
+    color: #1ed760;
+    margin-bottom: 20px;
+    
+}
+
+.quemSomos .conteudo .informacoes .texto{
+    font-size: 20px;
+    line-height: 1.5;
+    color: #fafafa;
+    font-weight: 400;
+}
+/* ----------QUEM SOMOS---------- */
+
+/* ----------RODAPÉ---------- */
+
+.rodape {
+    padding: 80px 0 20px 0;
+}
+
+.rodape .nav {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.rodape .nav .logo .image {
+    width: 50px;
+}
+
+.rodape .redesSociais {
+    display: flex;
+}
+
+
+.rodape .redesSociais a{
+    display: flex;
+    justify-content: center;
+    margin: 0 10px;
+    font-size: 30px;
+    border: 2px solid #111;
+    border-radius: 50%;
+    padding: 15px;
+    width: 65px;
+    transition: 0.3s ease-in-out;
+}
+
+.rodape .redesSociais a:hover{
+    box-shadow: 3px 5px 30px #1ed760;
+}
+
+.rodape .copyright{
+    margin-top: 70px;
+    text-align: center;
+}
+
+
+/* ----------RODAPÉ---------- */
+
+@media(max-width:1228px){
+    .quemSomos .conteudo{
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 30px;
+    }
+    .quemSomos .conteudo .image{
+        display: none;
+    }
+
+    .quemSomos .conteudo .informacoes{
+        width: 100%;
+    }
+}
+
+@media(max-width:847px){
+    .cabecalho{
+        justify-content: center;
+    }
+
+    .cabecalho .logo {
+        margin-bottom: 20px;
+    }
+    .rodape .nav .logo{
+        margin-bottom: 20px;
+    }
+
+    .rodape .nav, .copyright {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media(max-width:448px){
+    .cabecalho .logo{
+        margin-left: 10%;
+    }
+
+    .cabecalho .nav .menu{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cabecalho .nav .menu .item{
+        margin-bottom: 15px;
+    }
+    .rodape{
+        display: flex;
+        flex-direction: column;
+    }
+}

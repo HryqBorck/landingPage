@@ -80,6 +80,12 @@ body {
   position: absolute;
   z-index: -1;
   filter: brightness(50%);
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.conteudoPrincipal .paineis .imagemPainel.mostrar{
+    opacity: 1;
 }
 
 .conteudoPrincipal .paineis .projeto1 {

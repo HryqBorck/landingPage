@@ -13,9 +13,8 @@ body {
 .cabecalho {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 25px 0;
-  max-width: 1170px;
+  align-items: center;  
+  max-width: 1270px;
   margin: 0 auto;
   flex-wrap: wrap;
 }
@@ -229,11 +228,17 @@ body {
 
 @media(max-width:847px){
     .cabecalho{
-        justify-content: center;
+        justify-content: space-evenly;
+        height: 150px;
     }
 
     .cabecalho .logo {
-        margin-bottom: 20px;
+     height: 40px;
+    }
+    .cabecalho .nav .menu li.item a {
+        font-size: 12px;
+        padding:13px 7px;
+        
     }
     .rodape .nav .logo{
         margin-bottom: 20px;
@@ -247,6 +252,9 @@ body {
 }
 
 @media(max-width:448px){
+    .cabecalho{
+        height: 250px;
+    }
     .cabecalho .logo{
         margin-left: 10%;
     }

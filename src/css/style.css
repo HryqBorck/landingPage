@@ -133,6 +133,7 @@ body {
 /* ----------QUEM SOMOS---------- */
 .quemSomos{
     background-color: #ffffff;
+    border-bottom: 0.4px solid black;
 }
 
 .quemSomos .conteudo {
@@ -168,6 +169,7 @@ body {
 
 .rodape {
     padding: 80px 0 20px 0;
+
 }
 
 .rodape .nav {
@@ -271,5 +273,10 @@ body {
     .rodape{
         display: flex;
         flex-direction: column;
+    }
+    
+    .conteudoPrincipal .paineis .seta{
+        width: 30px;
+        height: 30px;
     }
 }

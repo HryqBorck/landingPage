@@ -35,7 +35,7 @@ body {
 }
 
 .logo .title:hover {
-  color: #1ed760;
+  color: #931ed7;
 }
 
 .cabecalho .nav .menu {
@@ -56,7 +56,7 @@ body {
 }
 
 .cabecalho .nav .menu .item a:hover {
-    color: #1ed760;
+    color: #931ed7;
 }
 
 /* ----------CABEÇALHO---------- */
@@ -88,16 +88,17 @@ body {
 }
 
 .conteudoPrincipal .paineis .projeto1 {
-    background-image: url("../image/painel1.jpg");
+    background-image: url("../image/pexels-fauxels-3182773.jpg");
 }
 
 .conteudoPrincipal .paineis .projeto2 {
-    background-image: url("../image/painel2.jpg");
+    background-image: url("../image/pexels-picjumbocom-196659.jpg");
 }
 
 .conteudoPrincipal .paineis .projeto3 {
-    background-image: url("../image/painel3.jpg");
+    background-image: url("../image/pexels-tranmautritam-251225.jpg");
 }
+
 
 .conteudoPrincipal .paineis .title {
     font-size: calc(1em + 1vw);
@@ -131,7 +132,7 @@ body {
 
 /* ----------QUEM SOMOS---------- */
 .quemSomos{
-    background-color: #2941AB;
+    background-color: #ffffff;
 }
 
 .quemSomos .conteudo {
@@ -150,7 +151,7 @@ body {
 
 .quemSomos .conteudo .informacoes .title {
     font-size: 50px;
-    color: #1ed760;
+    color: #000000;
     margin-bottom: 20px;
     
 }
@@ -158,7 +159,7 @@ body {
 .quemSomos .conteudo .informacoes .texto{
     font-size: 20px;
     line-height: 1.5;
-    color: #fafafa;
+    color: #000000;
     font-weight: 400;
 }
 /* ----------QUEM SOMOS---------- */
@@ -179,7 +180,7 @@ body {
 }
 
 .rodape .nav .logo .image {
-    width: 50px;
+    width: 100px;
 }
 
 .rodape .redesSociais {
@@ -200,7 +201,7 @@ body {
 }
 
 .rodape .redesSociais a:hover{
-    box-shadow: 3px 5px 30px #1ed760;
+    box-shadow: 3px 5px 30px #931ed7;
 }
 
 .rodape .copyright{
